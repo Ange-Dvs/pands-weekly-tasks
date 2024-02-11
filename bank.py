@@ -6,7 +6,7 @@ amount1 = int(input("Enter amount1(in cents): "))
 amount2 = int(input("Enter amount2(in cents): "))
 
 totalCents = (amount1 + amount2)
-totalEuro = (totalCents / 100)
+totalEuro = (totalCents / 100) #using / to divide allows the answer to be in floating number format
 
 print (f"The sum of these is €{totalEuro}")
 
