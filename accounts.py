@@ -1,6 +1,5 @@
 # accounts.py
-# This program takes in a 10 character bank account number replacing the first 6 characters with X and displaying the last 4 characters.
-# Assumption - program should not accept string less or greater than 10 digits.
+# This program prompts a user to take in a 10 character bank account number replacing the first 6 characters with X and displaying the last 4 characters.
 # Author: Angela Davis
 
 user_account_no = input('Please enter a 10 digit account number:')
