@@ -10,16 +10,13 @@ print(f'XXXXXX{last_4_nos}')
 # Extra: "Modify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)"
     
 # My assumptions:
-#       1- The last four characters of the string should be able to be identified dynamically (cannot use a static starting position to slice from).
-#           len() could be used to create a dynamic value for the starting position to slice the last four digits regardless of how long the string is.
-
-#       2- The number of Xs should match number of characters that are before the last 4 characters of the string. 
+#       1- The number of Xs should match number of characters that are before the last 4 characters of the string. 
 #           Counting the length of the string using len(), getting that value -4 and printing that many Xs.
 
-#       3- The number of characters printed at the end "Xs + 4 displayed characters" should match the length of the string originally entered by the user.
+#       2- The number of characters printed at the end "Xs + 4 displayed characters" should match the length of the string originally entered by the user.
 
 dynamic_user_account = input('Please enter an account number:')
-dynamic_last_4_nos = (dynamic_user_account[(len(dynamic_user_account))-4:]) #takes the lenght of the string and minuses 4 to identify the starting position to slice the last four charatcers regardless of lenght
+dynamic_last_4_nos = (dynamic_user_account[-4:]) #takes the last four digits of the account inputted by the user
 
 no_of_characters = (len(dynamic_user_account)-4) #getting the length of the string entered by the user and minusing 4
 no_of_Xs = ('X'*no_of_characters) #multiples Xs by number in the no_of_characters variable to create string with the required number
