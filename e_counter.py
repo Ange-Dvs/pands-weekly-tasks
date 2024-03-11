@@ -13,3 +13,18 @@
 # 2. incorrect/non existing filename 
 # 3. asked for a file which is not a text file
 
+import os.path
+FILENAME = 'countE5s.txt' # this file contains 5 es
+
+#def count_E(number_of_Es): 
+with open(FILENAME, 'r') as f:
+    file_text = f.read()
+    number_of_Es = 0
+    e = "e"
+    for e in file_text: 
+            number_of_Es += 1
+#return number_of_Es # the function then returns the number
+
+# output
+#final_num_of_E = count_E(number_of_Es)
+print(f"The letter E appears in this file {final_num_of_E} time.)")
