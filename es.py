@@ -1,10 +1,10 @@
-# e_counter.py
+# es.py
 # Write a program that reads in a text file and outputs the number of e's it contains.
 # The program should take the filename from an argument on the command line.
 
-# Assumptions: 
+# Assumptions:
 # User can use the relative path (if referencing file in same directory as the program) or full path name (if file is located somewhere else), program should be able to handle both 
-# The command line prompt from the user should only contain the prompt to run the python code (i.e. "python e_counter.py") followed the filename or path for the file
+# The command line prompt from the user should only contain the prompt to run the python code (i.e. "python es.py") followed the filename or path for the file
 # E should be counted regardless of the case
 # Error handling should end the program without retry and print a human readable error for the user 
 
