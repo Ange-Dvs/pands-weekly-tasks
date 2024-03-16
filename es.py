@@ -34,7 +34,7 @@ def count_E(): # this fuction reads the content from the filename provided by th
 try: # first program tries to read in the file name the user has entered providing the user has not entered a blank value 
     filename = sys.argv[1] # first the sys module is used to get the filename entered from the command line
     file_title, file_extension = os.path.splitext(filename.lower()) # .lower() is used in case the user types the filetype in all caps to convert to lower case for the error handling below
-    count_E()
+    count_E() # the function count_E() is triggered
     
 except IndexError: # if nothing has been entered by the user the following is error is shown to the user.
     print("No filename has been entered.\nProgram exited.\n")

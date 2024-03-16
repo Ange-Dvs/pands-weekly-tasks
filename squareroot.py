@@ -3,13 +3,13 @@
 # create a function called <tt>sqrt</tt> that does this.
 # Author: Angela Davis
 
-def sqrt():
+def sqrt(): # this function will calculate the approx square root of the number entered by the user in the main program below
     first_guess = num_from_user / 2 # get the initial guess by dividing the number from the user by 2
     next_guess = (first_guess + (num_from_user / first_guess)) / 2 # calculate the next guess
 
     while True: 
         guess = (next_guess + (num_from_user / next_guess)) / 2 # repeat the calculation with the next guess replacing the first guess
-        if abs(next_guess - guess) == 0:  # Check if the new guess is correct by checking if the old guess and new guess are equal
+        if abs(next_guess - guess) <= 0.0000001:  # Check if the new guess is correct by checking if the old guess and new guess are equal least than or equal to 0.000001 of a difference
             return guess # when the two guesses match the value will be returned to the main program
         next_guess = guess # next_guess value is updated if the two guesses do not match
 
